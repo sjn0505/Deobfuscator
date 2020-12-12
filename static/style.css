@@ -1,0 +1,41 @@
+.header{
+	border:5px solid #2E86C1;
+	background-color:#2E86C1;
+	
+}
+
+.card{
+	margin:50px 5px 0px;
+	padding:5px;
+}
+
+.border{
+	border:5px solid #2E86C1;
+	background-color:#2E86C1;
+	border-radius:5px;
+
+	
+	box-sizing: content-box;  
+  	width: 200px;
+  	height: 20px;
+  	padding: 10px;  
+  
+	
+}
+
+.padding{
+	padding-top:30px;
+}
+
+.paddingl{
+	padding-left:190px;
+	padding-top:70px;
+}
+
+.enlarge{
+	font-size:60px;
+	height:30px;
+}
+
+
+

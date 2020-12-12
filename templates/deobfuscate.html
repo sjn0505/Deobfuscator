@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" >
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<title>DEOBFUSCATE PAGE</title>
+</head>
+
+
+<body>
+	<h1 class="header text-center text-white ">DEOBFUSCATOR</h1>
+	
+	<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto padding">
+			
+					<div class="container">
+						<form method="POST" action="">
+							<textarea name="code"  rows="15" cols="50" id="submitText" required></textarea>
+						
+							<button type="submit" vlaue="send"  class="btn btn-primary" 										id="sendsub">Submit</button>
+						
+						</form>
+						
+					</div>
+					
+			
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto padding">
+				<div class="container">
+					<textarea rows="15" cols="50" id="getText" readonly></textarea>
+					<p class="btn btn-primary">Output</p>	
+				</div>
+			</div>				
+	</div>
+
+	<div class="container pt-5"> 
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit"class="btn btn-light" name="Remove whitespace" value="Remove whitespace" id="sendsub">Remove Whitespace</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name= "Rename" value="Rename">Rename variables and functions</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name= "Beautify" value="Beautify">Beautify</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Remove comments" value="Remove comments"> Remove spurious comments</button></div> 
+							</div>
+						<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Remove Dead code" value=" Remove Dead code">Dead code</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="String split" value="String split">String splitting</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Decode hex" value="Decode hex">Decode hex</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Decode backslash hex" value="Decode backslash hex">Decode backslash hex</button></div> 
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Decode Ampersand hex" value="Decode Ampersand hex">Decode Ampersand hex</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Decode backslash unicode" value="Decode backslash unicode">Decode backslash unicode</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name="Decode percent unicode" value="Decode percent unicode">Decode percent unicode</button></div> 
+								<div class="col-lg-3 col-md-6 col-sm-12 col-10 d-block m-auto"><button type="submit" class="btn btn-light" name= "Decode octal" value="Decode octal">Decode octal</button></div> 
+							</div>
+				</div>
+
+<script type="text/javascript" src="{{url_for('static', filename='deob.js') }}"></script>			    
+<script type="text/javascript" src="{{url_for('static', filename='remove_whitespace.js') }}"></script>	
+
+</body>
+</html>
